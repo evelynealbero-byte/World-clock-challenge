@@ -10,14 +10,25 @@ function updateTime() {
       "h:mm:ss[ <small>]A[</small>]",
     );
   }
-  let alicanteElement = document.querySelector("#alicante");
-  if (alicanteElement) {
-    let alicanteDateElement = alicanteElement.querySelector(".date");
-    let alicanteTimeElement = alicanteElement.querySelector(".time");
-    let alicanteTime = moment().tz("Europe/Madrid");
+  let mumbaiElement = document.querySelector("#mumbai");
+  if (mumbaiElement) {
+    let mumbaiDateElement = mumbaiElement.querySelector(".date");
+    let mumbaiTimeElement = mumbaiElement.querySelector(".time");
+    let mumbaiTime = moment().tz("Asia/Kolkata");
 
-    alicanteDateElement.innerHTML = alicanteTime.format("MMMM Do YYYY");
-    alicanteTimeElement.innerHTML = alicanteTime.format(
+    mumbaiDateElement.innerHTML = mumbaiTime.format("MMMM Do YYYY");
+    mumbaiTimeElement.innerHTML = mumbaiTime.format(
+      "h:mm:ss[ <small>]A[</small>]",
+    );
+  }
+  let AlicanteElement = document.querySelector("#alicante");
+  if (AlicanteElement) {
+    let AlicanteDateElement = AlicanteElement.querySelector(".date");
+    let AlicanteTimeElement = AlicanteElement.querySelector(".time");
+    let AlicanteTime = moment().tz("Europe/Madrid");
+
+    AlicanteDateElement.innerHTML = AlicanteTime.format("MMMM Do YYYY");
+    AlicanteTimeElement.innerHTML = AlicanteTime.format(
       "h:mm:ss[ <small>]A[</small>]",
     );
   }
